@@ -1,0 +1,39 @@
+/* styles.css */
+
+
+/* Set the map position */
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+h1{height :10vh;padding:auto;margin:0;}
+
+/* Style du conteneur principal utilisant Flexbox */
+#container {
+  display: flex;
+  flex-direction: row; /* Les enfants seront alignés en ligne */
+  height: 90vh;
+}
+
+/* Style pour la carte (80% de la largeur) */
+#map {
+  flex: 4; /* La carte prendra 4 parts sur 5 */
+ height: 100%; 
+}
+
+.black-and-white {
+  filter: grayscale(100%);
+}
+
+/* Style pour la légende (20% de la largeur) */
+#legend-panel {
+  flex: 1; /* La légende prendra 1 part sur 5 */
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+#legend-content {
+  /* Style pour le contenu de la légende */
+}

@@ -1,0 +1,698 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.692715,43.704346 ]
+    },
+    "properties": {
+    "n°":1,
+    "Nom":"Filature Ramond",
+    "Catégories":"Musée",
+    "catégorie2":"IT",
+    "Pictogramme":"Musée",
+    "picto2":"Chaine de production textile",
+    "Adresse1":"17 rue Rhin-et-Danube",
+    "Adresse2":81230,
+    "Adresse3":"Lacaune",
+    "Description (2lignes)":"Machines du 19°",
+    "Production":"",
+    "Lien":"https://www.tourisme-tarn.com/patrimoine-culturel/filature-ramond/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.63911,43.476601 ]
+    },
+    "properties": {
+    "n°":2,
+    "Nom":"Musée départemental du textile",
+    "Catégories":"Musée",
+    "catégorie2":"IT",
+    "Pictogramme":"Musée",
+    "picto2":"Chaine de production textile",
+    "Adresse1":"8 Parc Simone Veil,",
+    "Adresse2":81270,
+    "Adresse3":"Labastide-Rouairoux",
+    "Description (2lignes)":"Installé dans une ancienne manufacture, on peut y voir les différentes étapes de fabrication d’une étoffe de laine, spécialité de la vallée du Thoré ainsi que les techniques de teinture et de maille qui ont fait la réputation du sud tarnais.",
+    "Production":"laine",
+    "Lien":"https://musees.tarn.fr/nos-musees/musee-departemental-du-textile"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.845377,42.929675 ]
+    },
+    "properties": {
+    "n°":3,
+    "Nom":"Musée du textile et du peigne en corne",
+    "Catégories":"Musée",
+    "catégorie2":"IT",
+    "Pictogramme":"Musée",
+    "picto2":"étapes et processus de fabrication d’un tissu",
+    "Adresse1":"6 Rue Jean Canal,",
+    "Adresse2":9300,
+    "Adresse3":"Lavelanet",
+    "Description (2lignes)":"Le musée du textile et du peigne en corne à Lavelanet qui présente toutes les étapes et processus de fabrication d’un tissu dans l’ambiance et l’atmosphère conservées d’une des première usines de Lavelanet qui abrite aujourd’hui le musée.",
+    "Production":"laine",
+    "Lien":"https://www.museedutextileariege.fr/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.855703,44.725332 ]
+    },
+    "properties": {
+    "n°":4,
+    "Nom":"Musée vivant de la filature des Calquières",
+    "Catégories":"Musée",
+    "catégorie2":"IT",
+    "Pictogramme":"Musée",
+    "picto2":"",
+    "Adresse1":"23 Rue des Calquières,",
+    "Adresse2":48300,
+    "Adresse3":"Langogne",
+    "Description (2lignes)":"Lieu d'art et de traditions populaires, plongez dans le monde de la laine à travers les métiers d'autrefois : cardeurs, fileuses, tisserands, teinturiers, pareurs de draps ou commissionnaires",
+    "Production":"laine",
+    "Lien":"https://www.musee-lozere.com/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.323874,43.726324 ]
+    },
+    "properties": {
+    "n°":5,
+    "Nom":"Manufacture de la Savonnerie",
+    "Catégories":"Manufacture",
+    "catégorie2":"M",
+    "Pictogramme":"Manufacture",
+    "picto2":"Tapis à l'ancienne",
+    "Adresse1":"Impasse des Liciers",
+    "Adresse2":34700,
+    "Adresse3":"LODEVE",
+    "Description (2lignes)":"Etablissement de production tapisserie – Manufacture royale – Visite guidée",
+    "Production":"",
+    "Lien":"https://www.tourisme-lodevois-larzac.fr/annuaire/manufacture-nationale-de-la-savonnerie-atelier-de-lodeve"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.606934,43.988997 ]
+    },
+    "properties": {
+    "n°":6,
+    "Nom":"Musée cévenol",
+    "Catégories":"Musée",
+    "catégorie2":"?",
+    "Pictogramme":"Musée",
+    "picto2":"",
+    "Adresse1":"1 Rue des Calquières,",
+    "Adresse2":30120,
+    "Adresse3":"Le Vigan",
+    "Description (2lignes)":"Laine, soie, Nylon sont les matières premières utilisées au cours des ans pour une même activité : la bonneterie. Tissage, tricotage et broderie sont les activités textiles les plus répandues dans les Cévennes méridionales. La bonneterie se poursuit de nos jours sur ce territoire + Collection ethno dont Soie",
+    "Production":"diverse",
+    "Lien":"https://musee-cevenol.fr/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.724788,43.820413 ]
+    },
+    "properties": {
+    "n°":7,
+    "Nom":"Musée du Pays rabastinois",
+    "Catégories":"Musée",
+    "catégorie2":"X",
+    "Pictogramme":"Musée",
+    "picto2":"",
+    "Adresse1":"2 Rue Amédée Clausade,",
+    "Adresse2":81800,
+    "Adresse3":"Rabastens",
+    "Description (2lignes)":"possède une importante collection de broderies Haute couture venant de l'atelier de René Bégué, dit Rébé.Ce sont 1600 maquettes de broderies réalisées pour Dior, Givenchy, Balenciaga, Saint-Laurent etc... Elles sont faites sur tous types de textile entre 1907 et 1967",
+    "Production":"diverse",
+    "Lien":"https://musees-occitanie.fr/musee/musee-du-pays-rabastinois/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.64273,43.809364 ]
+    },
+    "properties": {
+    "n°":8,
+    "Nom":"Musée d’histoire et d’archéologie A. Jacquet à Beaucaire",
+    "Catégories":"Musée",
+    "catégorie2":"?",
+    "Pictogramme":"Musée",
+    "picto2":"",
+    "Adresse1":"Pl. Raimond VII,",
+    "Adresse2":30300,
+    "Adresse3":"Beaucaire",
+    "Description (2lignes)":"Le musée présente également, dans la salle vouée à la Foire de Beaucaire, un livre de compte signalant les opérations effectuées par un commerçant-drapier aixois, pendant les années 1736 à 1379. Il nous informe sur ses fournisseurs ainsi que sur les marchandises qu’il reçoit. Comprenant de nombreux échantillons de tissus, il fournit également des renseignements sur ses clients et sur les transactions.\nNous mettrons en place à partir du mois de septembre une exposition intitulée « l’habit fait bien le moine » sur quelques pratiques vestimentaires depuis l’Antiquité jusqu’au 19e siècle, telles que perçues à travers les collections.présente dans son parcours des collections permanentes des pièces textiles, essentiellement du 19e siècle dans une salle vouée au « félibrige rhodanien » en général, et au costume régional en particulier. Héritées de l'ancien musée du Vieux Beaucaire, les collections textiles du 19e siècle évoquent en effet le fort attachement de la cité gardoise aux traditions provençales : fichus d’indienne, bijoux d’arlésiennes, rubans de coiffes et jupons en coton imprimé, témoignent de cette culture partagée sur les deux rives du Rhône.",
+    "Production":"",
+    "Lien":"https://musees-occitanie.fr/musee/musee-auguste-jacquet/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.885945,44.104194 ]
+    },
+    "properties": {
+    "n°":9,
+    "Nom":"Maison Rouge Musée des vallées cévenoles",
+    "Catégories":"Musée",
+    "catégorie2":"IT",
+    "Pictogramme":"Musée",
+    "picto2":"",
+    "Adresse1":"5 rue de l’Industrie ",
+    "Adresse2":30270,
+    "Adresse3":"Saint-Jean-du-Gard",
+    "Description (2lignes)":"possède des collections textiles, echnatillon, machines, dans une ancienne manufacture",
+    "Production":"",
+    "Lien":"https://www.maisonrouge-musee.fr/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.294738,43.827651 ]
+    },
+    "properties": {
+    "n°":10,
+    "Nom":"Musée Calbet à Grisolles",
+    "Catégories":"Musée",
+    "catégorie2":"X",
+    "Pictogramme":"Musée",
+    "picto2":"costumes et accessoires populaires ou bourgeois\nobjets liés aux activités domestiques ou artisanales telles que la broderie, la dentelle, la couture ou encore le filage costumes et accessoires populaires ou bourgeois\nobjets liés aux activités domestiques ou artisanales telles que la broderie, la dentelle, la couture ou encore le filage",
+    "Adresse1":"15 Rue Jean de Comere,",
+    "Adresse2":82170,
+    "Adresse3":"Grisolles",
+    "Description (2lignes)":"Créé en 1938 par l'écrivain et poète occitan Théodore Calbet, le musée des arts et traditions populaires de Grisolles dispose d'un ensemble de collections liées aux différents aspects de la vie quotidienne régionale de la préhistoire à nos jours. Sa collection textile regroupe des costumes et accessoires populaires ou bourgeois de la fin du XVIIIe siècle aux années 1960, mais aussi de nombreux objets liés aux activités domestiques ou artisanales telles que la broderie, la dentelle, la couture ou encore le filage.",
+    "Production":"",
+    "Lien":"https://www.tourisme-tarnetgaronne.fr/offres/musee-calbet-grisolles-fr-2352660/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.143415,43.001457 ]
+    },
+    "properties": {
+    "n°":11,
+    "Nom":"musée du Palais des Évêques",
+    "Catégories":"Musée",
+    "catégorie2":"X",
+    "Pictogramme":"Musée",
+    "picto2":"costumes traditionnels\ninstruments nécessaires à l'artisanat textile (instrument à tailler le lin, peigne à lin et quenouilles...).costumes traditionnels\ninstruments nécessaires à l'artisanat textile (instrument à tailler le lin, peigne à lin et quenouilles...).",
+    "Adresse1":"Rte de Montjoie,",
+    "Adresse2":9190,
+    "Adresse3":"Saint-Lizier",
+    "Description (2lignes)":"Le musée du Palais des Évêques à Saint-Lizier qui présente dans son espace dédiée à la vie dans la vallée de Bethmale à la fin du XIX et au début du XX des costumes traditionnels de la vallée remarquables par leurs coupes et leurs couleurs vives ainsi que les instruments nécessaires à l'artisanat textile (instrument à tailler le lin, peigne à lin et quenouilles...).",
+    "Production":"",
+    "Lien":"https://www.sites-touristiques-ariege.fr/palais-des-eveques/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.080792,44.097783 ]
+    },
+    "properties": {
+    "n°":12,
+    "Nom":"Musée de Millau et des grands causses",
+    "Catégories":"Musée",
+    "catégorie2":"IT",
+    "Pictogramme":"Musée",
+    "picto2":"Gants",
+    "Adresse1":"Place Foch",
+    "Adresse2":12100,
+    "Adresse3":"Millau",
+    "Description (2lignes)":"Le travail de la peau anime la vie millavoise et de la région des Grands Causses depuis le milieu du Moyen-Âge, jusqu'à prendre une dimension industrielle au XVIIIe siècle, faisant de Millau, deux siècles plus tard, le premier centre mégissier et gantier du pays. Les différents aspects liés au travail de la mégisserie, de la transformation des peaux brutes en peaux fines et imputrescibles, en passant par le tannage et la teinture, sont présentés au musée.",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.379691,43.495076 ]
+    },
+    "properties": {
+    "n°":13,
+    "Nom":"JULES TOURNIER & FILS",
+    "Catégories":"EPV",
+    "catégorie2":"FTT",
+    "Pictogramme":"Fil et Tissu",
+    "picto2":"",
+    "Adresse1":"1 Allée Jacques Bonneville,",
+    "Adresse2":81200,
+    "Adresse3":"Mazamet",
+    "Description (2lignes)":"Maison familiale et indépendante, nous créons et fabriquons des fils et des tissus destinés au prêt-à-porter de luxe et aux tissus techniques pour l’Equipement de Protection Individuelle (EPI) et l’industrie.\nL’un des derniers lainiers français totalement intégré, nous maîtrisons toutes les étapes, du choix de la fibre brute, jusqu’au tissu fini.",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.725478,43.982977 ]
+    },
+    "properties": {
+    "n°":14,
+    "Nom":"SAS l'Arsoie",
+    "Catégories":"EPV",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"Rte de Saint-Roman de Codières,",
+    "Adresse2":30440,
+    "Adresse3":"Sumène",
+    "Description (2lignes)":"",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.611533,42.384868 ]
+    },
+    "properties": {
+    "n°":15,
+    "Nom":"LES TOILES DU SOLEIL",
+    "Catégories":"EPV",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"8 Bis Rue Jean Jaurès,",
+    "Adresse2":66260,
+    "Adresse3":"Saint-Laurent-de-Cerdans",
+    "Description (2lignes)":"",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.318486,43.71663 ]
+    },
+    "properties": {
+    "n°":16,
+    "Nom":"LA MAILLE AU PERSONNEL",
+    "Catégories":"EPV",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"15 Chem. Canto Coucut,",
+    "Adresse2":81360,
+    "Adresse3":"Montredon-Labessonnié",
+    "Description (2lignes)":"",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.321542,43.621992 ]
+    },
+    "properties": {
+    "n°":17,
+    "Nom":"Atelier Joly Missegle",
+    "Catégories":"EPV",
+    "catégorie2":"FTT",
+    "Pictogramme":"Tricotage",
+    "picto2":"",
+    "Adresse1":"Chem. de Montplaisir,",
+    "Adresse2":81100,
+    "Adresse3":"Burlats",
+    "Description (2lignes)":"L’Atelier Missegle est fondé en 1983 quand Myriam JOLY importe l’un des premiers troupeaux de chèvres mohair en France. Aujourd’hui, MISSEGLE tricote des pulls, des chaussettes et des accessoires en fibres naturelles (mohair, mérinos, duvet de yack, fil d’écosse biologique…) . C’est une entreprise familiale qui à pour ambition de permettre à ses employés de vivre et travailler au pays en fabriquant de belles choses utiles aux autres.",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.216156,43.584041 ]
+    },
+    "properties": {
+    "n°":18,
+    "Nom":"Ets Lucien Albouy et Cie",
+    "Catégories":"EPV",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"89 Rue de l'Industrie,",
+    "Adresse2":81100,
+    "Adresse3":"Castres",
+    "Description (2lignes)":"",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.497156,43.627263 ]
+    },
+    "properties": {
+    "n°":19,
+    "Nom":"Filature du Parc",
+    "Catégories":"EPV",
+    "catégorie2":"",
+    "Pictogramme":"Filature",
+    "picto2":"",
+    "Adresse1":"Rte de Sarrazy,",
+    "Adresse2":81260,
+    "Adresse3":"Brassac",
+    "Description (2lignes)":"Entreprise familiale depuis 1976, Leader Européen de filature cardée située à Brassac dans le Tarn (France) spécialisée dans la production de fils",
+    "Production":"Fil",
+    "Lien":"https://filatures-du-parc.com/"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.274054,43.557014 ]
+    },
+    "properties": {
+    "n°":20,
+    "Nom":"Regain (FPL)",
+    "Catégories":"EPV",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"Espace Entreprises, 1 Rue Pierre Gilles de Gennes,",
+    "Adresse2":81290,
+    "Adresse3":"Labruguière",
+    "Description (2lignes)":"",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "n°":21,
+    "Nom":"Lacarde",
+    "Catégories":"",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"",
+    "Adresse2":null,
+    "Adresse3":"",
+    "Description (2lignes)":"",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.145331,44.051753 ]
+    },
+    "properties": {
+    "n°":22,
+    "Nom":"LA FABRIQUE & CO’ / MAISON COQUELICOT",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"ZA La Centrale, 3 Rue André Ampère",
+    "Adresse2":81400,
+    "Adresse3":"CARMAUX",
+    "Description (2lignes)":"La confection textile chaîne et trame, maille\nLa fabrication de vêtements pour marque, polo, tee shirt, sweat, tot bag",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.583046,44.342032 ]
+    },
+    "properties": {
+    "n°":23,
+    "Nom":"ATELIER TUFFERY",
+    "Catégories":"EPV",
+    "catégorie2":"FTT",
+    "Pictogramme":"Jean",
+    "picto2":"",
+    "Adresse1":"ZONE ARTISANALE ST JULIEN DU GOURG",
+    "Adresse2":48400,
+    "Adresse3":"FLORAC",
+    "Description (2lignes)":"Atelier Tuffery est une entreprise familiale de confection textile spécialisée dans la confection de vêtements de travail en jean, créée en 1892",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.211177,43.544428 ]
+    },
+    "properties": {
+    "n°":24,
+    "Nom":"TISSAGES D’AUTAN",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"Tissage",
+    "picto2":"",
+    "Adresse1":"ZA les Planes",
+    "Adresse2":81290,
+    "Adresse3":"ST-AFFRIQUE-LES-MONTAGNE",
+    "Description (2lignes)":"TISSAGES D’AUTAN est spécialiste en tissus poids lourds, notamment pour de la veste, du pantalon, des chaussures à base des 4 matières naturelles (laines françaises, lin, chanvre, coton bio) utilisées en 100% ou en métissage. Nous avons une forte valeur ajoutée sur la traçabilité des fils que nous utilisons.\n\nNous vendons exclusivement à des marques ou à des créateur",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.366918,43.51223 ]
+    },
+    "properties": {
+    "n°":25,
+    "Nom":"PLO ENNOBLISSEUR",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"Teinture et appret",
+    "picto2":"",
+    "Adresse1":"2A rue de la Mécanique",
+    "Adresse2":81200,
+    "Adresse3":"AUSSILLON",
+    "Description (2lignes)":"Teinture et Apprêts sur Fibres (Bourre), Fils en bobine, Tissus / Maille au mètre, Articles confectionnés sur toutes matières premières textiles – Teinture fantaisie sur tissu/maille en cellulosique : « Art & Dye » – Ignifugation permanente de la Laine",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.371843,43.297092 ]
+    },
+    "properties": {
+    "n°":26,
+    "Nom":"MAISON IZARD",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"29 rue des Cordeliers",
+    "Adresse2":64000,
+    "Adresse3":"PAU",
+    "Description (2lignes)":"MAISON IZARD a été crée en 2017, avec comme mission de valoriser la laine des Pyrénées.\nMAISON IZARD propose un vestiaire engagé et intemporel, pour l’homme et la femme, réalisé à partir de laine locale et de matières recyclées.\nPour la fabrication (tricotage, teinture et confection), MAIZON IZARD travaille avec des partenaires locaux, labellisés France Terre Textile et EPV, afin de réduire son impact environnemental.",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.836665,42.917586 ]
+    },
+    "properties": {
+    "n°":27,
+    "Nom":"TISSAGES CATHARES / DE PHIL A PAT",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"Tissage",
+    "picto2":"",
+    "Adresse1":"10 St Nestor",
+    "Adresse2":9300,
+    "Adresse3":"VILLENEUVE D’OLMES",
+    "Description (2lignes)":"Installés de puis plus de 30 ans, et 4ième génération de tisserands, nous perpétuons aujourd’hui le savoir-faire local en matière de tissage et de confection.\nConception de tissus, production tissu chaîne et trame, confection linge de maison et habillement.",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.106614,43.539066 ]
+    },
+    "properties": {
+    "n°":28,
+    "Nom":"Ets Jean FERRIE",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"Ennoblissement",
+    "picto2":"",
+    "Adresse1":"4 route de Soual",
+    "Adresse2":81110,
+    "Adresse3":"LESCOUT",
+    "Description (2lignes)":"Une des dernières entreprises en France à travailler la laine et la laine cardée.\nLa Société d’exploitation des Ets FERRIE est une entreprise spécialisée dans l’ennoblissement textile. Elle réalise les apprêts chimiques et les apprêts mécaniques afin d’apporter des propriétés techniques et qualités au tissu, en voici quelques exemples : Plusieurs sortes de lavage, imperméabilisation, ignifugation, séchage, grattage, flambage, tonte, décatissage, calandrage, kd, franges…",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.909387,43.752069 ]
+    },
+    "properties": {
+    "n°":29,
+    "Nom":"ETS OLIVIER GUILLE ET FILS",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"4 rue de la bonneterie",
+    "Adresse2":81390,
+    "Adresse3":"BRIATEXTE",
+    "Description (2lignes)":"Les GUILLE dirigent leur usine de bonneterie depuis plus d’un siècle, à Briatexte, un petit village du Sud-Ouest de la France. En 1947, Robert crée la marque Collégien et, avec son frère Alain, invente l’injection d’une semelle souple en caoutchouc dans une chaussette : le chausson-chaussette est né!",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.300451,43.326955 ]
+    },
+    "properties": {
+    "n°":30,
+    "Nom":"MANUFACTURE DE LAYETTE ET DE TRICOTS",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"ZI Berlanne, 4 rue du Pont Long",
+    "Adresse2":64160,
+    "Adresse3":"Morlaas",
+    "Description (2lignes)":"Depuis plus de 40 ans, nous tricotons et fabriquons nos vêtements en tricot pour bébé dans notre manufacture située dans le Sud-Ouest, au pied des Pyrénées.",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.582904,44.872435 ]
+    },
+    "properties": {
+    "n°":31,
+    "Nom":"DSI AQUITAINE",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"5 Rue Pierre et Marie Curie",
+    "Adresse2":33520,
+    "Adresse3":"BRUGES",
+    "Description (2lignes)":"Notre atelier de confection de BRUGES est spécialisé dans la fabrication d’accessoires.\nTote-bag pour la grande distribution,\nCabas destinés aux mamans venant d’accoucher dans les maternités,\nMasques de protection textile COVID 19 afin de répondre aux besoins de l’État.",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.04795,43.921673 ]
+    },
+    "properties": {
+    "n°":32,
+    "Nom":"BRUN DE VIAN-TIRAN",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"2 cours Victor Hugo",
+    "Adresse2":84800,
+    "Adresse3":"L'ISLE-SUR-LA-SORGUE",
+    "Description (2lignes)":"Maison familiale sur 8 générations depuis 1808, nous recherchons les plus belles laines sur tous les continents : mérinos, mohair, alpaga, lama, cachemire…pour créer des étoffes de bien-être : plaids, écharpes, châles, couvertures… entièrement fabriquées à l’Isle-sur-la-Sorgue, en Provence. Premier transformateur français des laines de France, partenaire des bergers locaux pour la restauration de la plus belle laine de l’hémisphère nord, le Mérinos d’Arles Antique® mais aussi de la plus haute école française de design industriel, l’ENSCI – Les Ateliers, BRUN DE VIAN-TIRAN est un écosystème bienveillant et responsable de l’éleveur au designer et du manufacturier au client",
+    "Production":"",
+    "Lien":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.215924,43.778378 ]
+    },
+    "properties": {
+    "n°":33,
+    "Nom":"ARTIGA",
+    "Catégories":"FTT",
+    "catégorie2":"",
+    "Pictogramme":"",
+    "picto2":"",
+    "Adresse1":"5, Rue Brémontier",
+    "Adresse2":40140,
+    "Adresse3":"MAGESCQ",
+    "Description (2lignes)":"Découvrez tout notre univers textile, des toiles inspirées du Pays Basque, modernisées, avec un large choix de coloris et de rayures certifié 100% Origine France Garantie et France terre textile. Nous déclinons notre linge de maison, imaginé, tissé et fabriqué en France, en une gamme complète : linge de table, linge de cuisine, linge de bain, décoration intérieure, sans compter tous nos accessoires assortis et nos toiles au mètres.",
+    "Production":"",
+    "Lien":""
+    }
+  }
+]
+}

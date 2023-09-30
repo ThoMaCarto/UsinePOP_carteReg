@@ -57,7 +57,7 @@ fetch(config.geoJSONFile)
           radius: config.circleMarkerSize,
           color: categoryColor,
           fillColor: categoryColor,
-          fillOpacity: 0.9
+          fillOpacity: 0.9,
         });
 
         // Construction du contenu de la popup avec toutes les propriétés

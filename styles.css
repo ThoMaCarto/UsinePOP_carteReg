@@ -23,7 +23,7 @@ h1{height :10vh;padding:auto;margin:0;}
 }
 
 .black-and-white {
-  filter: grayscale(100%);
+  filter: grayscale(90%);
 }
 
 /* Style pour la légende (20% de la largeur) */

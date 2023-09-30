@@ -10,7 +10,7 @@ const config = {
   tileAttribution: '© OpenTopoMap Contributors',  // Attribution pour les tuiles
   AuthorAttribution : 'projet UsinePOP, Cartographie Thomas Maillard : <a href=www.arpentages.fr> ARPENTAGES </a>',
   geoJSONFile: 'points_cartoRegion_UsinePOP.geojson',  // Fichier GeoJSON pour afficher les marqueurs
-  circleMarkerSize: 10,  // Taille des CircleMarkers (en pixels)
+  circleMarkerSize: 4,  // Taille des CircleMarkers (en pixels)
   markerColors: {  // Couleurs pour chaque catégorie
     Musée: 'red',
     Manufacture: 'blue',
@@ -57,7 +57,7 @@ fetch(config.geoJSONFile)
           radius: config.circleMarkerSize,
           color: categoryColor,
           fillColor: categoryColor,
-          fillOpacity: 0.8
+          fillOpacity: 0.9
         });
 
         // Construction du contenu de la popup avec toutes les propriétés

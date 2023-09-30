@@ -97,10 +97,10 @@ legendContent.innerHTML = `
   </div>
   <div style="margin-bottom: 10px;">
     <div style="width: 20px; height: 20px; background-color: brown; display: inline-block;"></div>
-    <span>EPV</span>
+    <span>Entreprise du Patrimoine Vivant (EPV)</span>
   </div>
   <div style="margin-bottom: 10px;">
     <div style="width: 20px; height: 20px; background-color: pink; display: inline-block;"></div>
-    <span>FTT</span>
+    <span>France Terre Textile : 70% fabriqué en France (FTT)</span>
   </div>
 `;

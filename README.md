@@ -32,7 +32,7 @@ La configuration de la carte se fait via le fichier `config.js`. Vous pouvez aju
 3. La carte interactive sera affichée avec les marqueurs et la légende.
 
 ## Auteur
-[Thomas Maillard]([lien-vers-votre-profil](https://github.com/ThoMaCarto))
+[Thomas Maillard](https://github.com/ThoMaCarto)
 à partir des données compilé et sélectionné par l'équipe du projet USINE POP
 
 ## Licence

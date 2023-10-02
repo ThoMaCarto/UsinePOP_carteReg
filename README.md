@@ -1,5 +1,7 @@
 # UsinePOP_carteReg
-Carte régionale pour les projet Usine pop
+Carte régionale pour les projet Usine pop.
+Cette carte représente un choix d'équipements en lien avec le patrimoine de l'industrie textile dans le sud-ouest de la France.
+Les marqueurs affichés sur la carte peuvent être filtrés en fonction de leur catégorie.
 La carte est visible sur la githubpage:[ https://thomacarto.github.io/UsinePOP_carteReg/index.html](https://thomacarto.github.io/UsinePOP_carteReg/index.html)
 # Carte Interactive avec Leaflet
 
@@ -12,6 +14,7 @@ La carte est visible sur la githubpage:[ https://thomacarto.github.io/UsinePOP_c
 - La couleur des marqueurs dépend de la catégorie des lieux.
 - La carte peut être rendue en noir et blanc.
 - Affiche une légende des catégories à droite de la carte.
+- barre de recherche d'adresse de géoportail
 
 ## Configuration
 
@@ -22,6 +25,7 @@ La configuration de la carte se fait via le fichier `config.js`. Vous pouvez aju
 - `showScaleBar`: Afficher la barre d'échelle (`true` ou `false`).
 - `tileURL`: URL des tuiles de la carte.
 - `tileAttribution`: Attribution pour les tuiles de la carte.
+- 'tileOpacity' : l'opacité des tuiles de la carte.
 - `geoJSONFile`: Fichier GeoJSON contenant les marqueurs.
 - `circleMarkerSize`: Taille des CircleMarkers.
 - `markerColors`: Couleurs des marqueurs en fonction des catégories.

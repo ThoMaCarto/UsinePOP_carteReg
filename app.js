@@ -14,7 +14,7 @@ const config = {
    // Catégories de marqueurs disponibles
   markerCategories: ['Musée', 'Manufacture', 'EPV', 'FTT'],
   // Ajout d'une variable pour stocker les filtres sélectionnés
-  selectedFilters: ['Musée', 'Manufacture', 'EPV', 'FTT']
+  selectedFilters: ['Musée']
   markerColors: {  // Couleurs pour chaque catégorie
     Musée: 'red',
     Manufacture: 'blue',

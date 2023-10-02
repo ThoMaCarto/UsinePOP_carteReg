@@ -14,7 +14,7 @@ La carte est visible sur la githubpage:[ https://thomacarto.github.io/UsinePOP_c
 - La couleur des marqueurs dépend de la catégorie des lieux.
 - La carte peut être rendue en noir et blanc.
 - Affiche une légende des catégories à droite de la carte.
-- barre de recherche d'adresse de géoportail
+- barre de recherche d'adresse de géoportail https://geoservices.ign.fr/documentation/services/utilisation-web/extension-pour-leaflet#1978
 
 ## Configuration
 

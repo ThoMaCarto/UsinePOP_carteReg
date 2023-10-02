@@ -39,7 +39,7 @@ La configuration de la carte se fait via le fichier `config.js`. Vous pouvez aju
 
 ## Auteur
 [Thomas Maillard](https://github.com/ThoMaCarto) 
-cartographe/chef de projet chez [AprentageS](https://www.arpentages.fr)
+cartographe/chef de projet chez [ArpentageS](https://www.arpentages.fr)
 
 
 à partir des données compilé et sélectionné par l'équipe du projet USINE POP

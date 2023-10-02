@@ -20,6 +20,7 @@ const config = {
     FTT: 'green'
   },
   searchIGN:true,
+  useMarkerCluster: false,  // Activation ou désactivation du clustering
 };
 
 ////////////////////////////////
@@ -39,14 +40,39 @@ blackAndWhiteTileLayer.getContainer().classList.add('black-and-white');  // Rend
 if (config.showScaleBar) {
   L.control.scale().addTo(map);
 }
+
+
+// recherche par adresses du géoportail si configuré
+if (config.searchIGN) {
+	// ajout d'une couche
+var lyrMaps = L.geoportalLayer.WMTS({
+    layer: "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
+});
+map.addLayer(lyrMaps) ;
+// création et ajout du controle de la barre de recherche
+var searchCtrl = L.geoportalControl.SearchEngine({
+});
+map.addControl(searchCtrl);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+//// Créer un groupe de couches pour les marqueurs (non clusterisé par défaut)////
+//////////////////////////////////////////////////////////////////////////////////
+
+let markerLayer = L.layerGroup();
+
+if (config.useMarkerCluster) {
+  // Utiliser le clustering de marqueurs
+  markerLayer = L.markerClusterGroup();
+}
+
 ////////////////////////////////////////////////////////
 //// Chargement du GeoJSON et création des marqueurs////
 ////////////////////////////////////////////////////////
 fetch(config.geoJSONFile)
   .then(response => response.json())
   .then(data => {
-    const markers = L.layerGroup();
-
     // Parcours des features du GeoJSON pour créer les marqueurs
     data.features.forEach(feature => {
       const coordinates = feature.geometry.coordinates;
@@ -71,15 +97,17 @@ fetch(config.geoJSONFile)
         }
         marker.bindPopup(popupContent);
 
-        marker.addTo(markers);
+        marker.addTo(markerLayer);  // Ajout du marqueur au groupe approprié
       } else {
         console.error('Coordonnées invalides pour la feature :', feature);
       }
     });
 
-    markers.addTo(map);  // Ajout des marqueurs à la carte
+    // Ajout du groupe de marqueurs à la carte
+    markerLayer.addTo(map);
   })
   .catch(error => console.error('Erreur lors du chargement du GeoJSON :', error));
+
 
 
 /////////////////////////////////////////////
@@ -91,11 +119,7 @@ function updateMap() {
   const selectedCategories = getSelectedCategories();
 
   // Effacer les marqueurs actuels
-  map.eachLayer(layer => {
-    if (layer instanceof L.CircleMarker) {
-      map.removeLayer(layer);
-    }
-  });
+  markerLayer.clearLayers();
 
   // Charger à nouveau les marqueurs en fonction des catégories sélectionnées
   fetch(config.geoJSONFile)
@@ -131,7 +155,7 @@ function updateMap() {
         }
       });
 
-      markers.addTo(map);
+      markers.addTo(markerLayer);
     })
     .catch(error => console.error('Erreur lors du chargement du GeoJSON :', error));
 }
@@ -149,25 +173,10 @@ function getSelectedCategories() {
 }
 
 
-//////////////////////////////////////////////
-//// recherche par adresses du géoportail si configuré ////
-//////////////////////////////////////////////
 
+/////////////////////////////////////////////////////
+//// Gérer le clic sur le bouton "Mettre à jour" ////
+/////////////////////////////////////////////////////
 
-if (config.searchIGN) {
-	// ajout d'une couche
-var lyrMaps = L.geoportalLayer.WMTS({
-    layer: "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-});
-map.addLayer(lyrMaps) ;
-
-
-// création et ajout du controle
-var searchCtrl = L.geoportalControl.SearchEngine({
-});
-map.addControl(searchCtrl);
-}
-
-// Gérer le clic sur le bouton "Mettre à jour"
 const updateButton = document.getElementById('updateButton');
 updateButton.addEventListener('click', updateMap);

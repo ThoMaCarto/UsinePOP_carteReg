@@ -32,10 +32,10 @@ La configuration de la carte se fait via le fichier `config.js`. Vous pouvez aju
 - `searchIGN`: Afficher la barre de recherche par adresse.
 
 ## Utilisation
-
-1. Clonez ce dépôt.
-2. Ouvrez `index.html` dans un navigateur web.
-3. La carte interactive sera affichée avec les marqueurs et la légende.
+1. vous pouvez l'intégrer directement sur votre page web en iframe : 
+`<iframe  width="1500"  height="400"  src="https://thomacarto.github.io/UsinePOP_carteReg/index.html"></iframe>`
+2. Vous pouvez cloner ce dépot
+3. Vous pouvez la visualiser sur une page github : [https://thomacarto.github.io/UsinePOP_carteReg/index.html](https://thomacarto.github.io/UsinePOP_carteReg/index.html)
 
 ## Auteur
 [Thomas Maillard](https://github.com/ThoMaCarto) 

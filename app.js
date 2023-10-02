@@ -18,7 +18,7 @@ const config = {
     Manufacture: 'blue',
     EPV: 'brown',
     FTT: 'pink'
-  }
+  },
   searchIGN:true,
 };
 

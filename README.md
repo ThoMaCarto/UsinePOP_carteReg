@@ -25,10 +25,11 @@ La configuration de la carte se fait via le fichier `config.js`. Vous pouvez aju
 - `showScaleBar`: Afficher la barre d'échelle (`true` ou `false`).
 - `tileURL`: URL des tuiles de la carte.
 - `tileAttribution`: Attribution pour les tuiles de la carte.
-- 'tileOpacity' : l'opacité des tuiles de la carte.
+- `tileOpacity` : l'opacité des tuiles de la carte.
 - `geoJSONFile`: Fichier GeoJSON contenant les marqueurs.
 - `circleMarkerSize`: Taille des CircleMarkers.
 - `markerColors`: Couleurs des marqueurs en fonction des catégories.
+- `searchIGN`: Afficher la barre de recherche par adresse.
 
 ## Utilisation
 

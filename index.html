@@ -11,15 +11,21 @@
 <h1>Musée, manufacture et centre de production textile en Occitanie</h1>
 <div id="container">
     <div id="map"></div>
-	<div id="legend-panel">
-        <h2>Types d'établissements</h2>
-        <div id="legend-content">
-            <!-- Le contenu de la légende sera ajouté ici -->
-        </div>
-		<div style="margin-top: 10px;">
-			<button id="update-button" class="btn btn-primary">Mettre à jour</button>
+	<div id="legend">
+		<div id="legend-content"></div>
+		<div id="category-filter">
+			<h3>Filtrer par catégorie</h3>
+			
+			
+			<div id="categories">
+				<div style="width: 20px; height: 20px; background-color: red; display: inline-block;"></div><label><input type="checkbox" value="Musée" checked> Musée</label><br>
+				<div style="width: 20px; height: 20px; background-color: blue; display: inline-block;"></div><label><input type="checkbox" value="Manufacture" checked> Manufacture</label><br>
+				<div style="width: 20px; height: 20px; background-color: brown; display: inline-block;"></div><label><input type="checkbox" value="EPV" checked> Entreprise du Patrimoine Vivant (EPV)</label><br>
+				<div style="width: 20px; height: 20px; background-color: pink; display: inline-block;"></div><label><input type="checkbox" value="FTT" checked> France Terre Textile : 70% fabriqué en France (FTT)</label><br>
+			</div>
+			<button id="updateButton">Mettre à jour</button>
 		</div>
-    </div>
+	</div>
 </div>	
 
     <!-- Leaflet CSS -->

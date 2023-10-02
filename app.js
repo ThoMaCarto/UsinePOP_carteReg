@@ -1,3 +1,4 @@
+////////////////////////////////////
 //// Configuration pour la carte////
 ////////////////////////////////////
 
@@ -8,13 +9,11 @@ const config = {
   showScaleBar: true,  // Affichage de la barre d'échelle
   tileURL: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',  // URL des tuiles de la carte
   tileAttribution: '© OpenTopoMap Contributors',  // Attribution pour les tuiles
+  tileOpacity: 0.6, //opacité des tuiles de la carte
   AuthorAttribution : 'projet UsinePOP, Cartographie Thomas Maillard : <a href=www.arpentages.fr> ARPENTAGES </a>',
+  
   geoJSONFile: 'points_cartoRegion_UsinePOP.geojson',  // Fichier GeoJSON pour afficher les marqueurs
   circleMarkerSize: 4,  // Taille des CircleMarkers (en pixels)
-   // Catégories de marqueurs disponibles
-  markerCategories: ['Musée', 'Manufacture', 'EPV', 'FTT'],
-  // Ajout d'une variable pour stocker les filtres sélectionnés
-  selectedFilters: ['Musée'],
   markerColors: {  // Couleurs pour chaque catégorie
     Musée: 'red',
     Manufacture: 'blue',
@@ -23,7 +22,7 @@ const config = {
   }
 };
 
-
+////////////////////////////////
 ////Affichagege de la carte ////
 ////////////////////////////////
 
@@ -32,7 +31,7 @@ const map = L.map('map').setView(config.centerMap, config.zoomLevel);
 
 // Ajout de la tuile (fond de carte) et rendu noir et blanc
 const blackAndWhiteTileLayer = L.tileLayer(config.tileURL, {
-  attribution: config.tileAttribution +' | ' + config.AuthorAttribution 
+  attribution: config.tileAttribution +' | ' + config.AuthorAttribution, opacity:config.tileOpacity, 
 }).addTo(map);
 blackAndWhiteTileLayer.getContainer().classList.add('black-and-white');  // Rend la tuile en noir et blanc
 
@@ -40,8 +39,9 @@ blackAndWhiteTileLayer.getContainer().classList.add('black-and-white');  // Rend
 if (config.showScaleBar) {
   L.control.scale().addTo(map);
 }
-
-// Chargement du GeoJSON et création des marqueurs
+////////////////////////////////////////////////////////
+//// Chargement du GeoJSON et création des marqueurs////
+////////////////////////////////////////////////////////
 fetch(config.geoJSONFile)
   .then(response => response.json())
   .then(data => {
@@ -81,88 +81,73 @@ fetch(config.geoJSONFile)
   })
   .catch(error => console.error('Erreur lors du chargement du GeoJSON :', error));
 
+
+/////////////////////////////////////////////
 //// filtrage et mise à jour de la carte ////
 /////////////////////////////////////////////
-// Écouteur d'événement pour les changements de filtres
-legendContent.addEventListener('change', (event) => {
-  const filterValue = event.target.value;
 
-  if (event.target.checked) {
-    config.selectedFilters.push(filterValue);
-  } else {
-    config.selectedFilters = config.selectedFilters.filter(filter => filter !== filterValue);
-  }
-});
+// Fonction pour mettre à jour la carte en fonction des catégories sélectionnées
+function updateMap() {
+  const selectedCategories = getSelectedCategories();
 
-// Écouteur d'événement pour le bouton de mise à jour
-const updateButton = document.getElementById('update-button');
-updateButton.addEventListener('click', () => {
-  updateMarkers();
-});
-
-// Fonction pour mettre à jour les marqueurs en fonction des filtres sélectionnés
-function updateMarkers() {
-  // Supprimer les anciens marqueurs de la carte
-  map.removeLayer(markers);
-
-  // Créer un nouveau groupe de marqueurs
-  markers = L.layerGroup();
-
-  // Filtrer les marqueurs en fonction des catégories sélectionnées
-  data.features.forEach(feature => {
-    const coordinates = feature.geometry.coordinates;
-    const properties = feature.properties;
-
-    if (coordinates && coordinates.length === 2) {
-      const categoryColor = config.markerColors[properties.Catégories] || 'gray';
-
-      if (config.selectedFilters.includes(properties.Catégories)) {
-        const marker = L.circleMarker([coordinates[1], coordinates[0]], {
-          radius: config.circleMarkerSize,
-          color: categoryColor,
-          fillColor: categoryColor,
-          fillOpacity: 0.9,
-        });
-
-        let popupContent = '<strong>Informations</strong><br>';
-        for (const [key, value] of Object.entries(properties)) {
-          popupContent += `<strong>${key}:</strong> ${value}<br>`;
-        }
-        marker.bindPopup(popupContent);
-
-        marker.addTo(markers);
-      }
-    } else {
-      console.error('Invalid coordinates for feature:', feature);
+  // Effacer les marqueurs actuels
+  map.eachLayer(layer => {
+    if (layer instanceof L.CircleMarker) {
+      map.removeLayer(layer);
     }
   });
 
-  // Ajouter les nouveaux marqueurs à la carte
-  markers.addTo(map);
+  // Charger à nouveau les marqueurs en fonction des catégories sélectionnées
+  fetch(config.geoJSONFile)
+    .then(response => response.json())
+    .then(data => {
+      const markers = L.layerGroup();
+
+      data.features.forEach(feature => {
+        const coordinates = feature.geometry.coordinates;
+        const properties = feature.properties;
+
+        if (coordinates && coordinates.length === 2) {
+          const categoryColor = config.markerColors[properties.Catégories] || 'gray';
+
+          if (selectedCategories.length === 0 || selectedCategories.includes(properties.Catégories)) {
+            const marker = L.circleMarker([coordinates[1], coordinates[0]], {
+              radius: config.circleMarkerSize,
+              color: categoryColor,
+              fillColor: categoryColor,
+              fillOpacity: 0.9,
+            });
+
+            let popupContent = '<strong>Informations</strong><br>';
+            for (const [key, value] of Object.entries(properties)) {
+              popupContent += `<strong>${key}:</strong> ${value}<br>`;
+            }
+            marker.bindPopup(popupContent);
+
+            marker.addTo(markers);
+          }
+        } else {
+          console.error('Coordonnées invalides pour la feature :', feature);
+        }
+      });
+
+      markers.addTo(map);
+    })
+    .catch(error => console.error('Erreur lors du chargement du GeoJSON :', error));
 }
 
-///// Légende de la carte /////
-///////////////////////////////
+// Fonction pour obtenir les catégories sélectionnées
+function getSelectedCategories() {
+  const checkboxes = document.querySelectorAll('#categories input[type=checkbox]');
+  const selectedCategories = [];
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked) {
+      selectedCategories.push(checkbox.value);
+    }
+  });
+  return selectedCategories;
+}
 
-// Récupération de l'élément de contenu de la légende
-const legendContent = document.getElementById('legend-content');
-
-// Remplissage du contenu de la légende
-legendContent.innerHTML = `
-  <div style="margin-bottom: 10px;">
-    <div style="width: 20px; height: 20px; background-color: red; display: inline-block;"></div>
-    <span>Musée</span>
-  </div>
-  <div style="margin-bottom: 10px;">
-    <div style="width: 20px; height: 20px; background-color: blue; display: inline-block;"></div>
-    <span>Manufacture</span>
-  </div>
-  <div style="margin-bottom: 10px;">
-    <div style="width: 20px; height: 20px; background-color: brown; display: inline-block;"></div>
-    <span>Entreprise du Patrimoine Vivant (EPV)</span>
-  </div>
-  <div style="margin-bottom: 10px;">
-    <div style="width: 20px; height: 20px; background-color: pink; display: inline-block;"></div>
-    <span>France Terre Textile : 70% fabriqué en France (FTT)</span>
-  </div>
-`;
+// Gérer le clic sur le bouton "Mettre à jour"
+const updateButton = document.getElementById('updateButton');
+updateButton.addEventListener('click', updateMap);

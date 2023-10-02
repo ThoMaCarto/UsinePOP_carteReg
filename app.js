@@ -19,6 +19,7 @@ const config = {
     EPV: 'brown',
     FTT: 'pink'
   }
+  searchIGN:true,
 };
 
 ////////////////////////////////
@@ -149,19 +150,23 @@ function getSelectedCategories() {
 
 
 //////////////////////////////////////////////
-//// recherche par adresses du géoportail ////
+//// recherche par adresses du géoportail si configuré ////
 //////////////////////////////////////////////
 
-// ajout d'une couche
+
+if (config.searchIGN) {
+	// ajout d'une couche
 var lyrMaps = L.geoportalLayer.WMTS({
     layer: "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
 });
 map.addLayer(lyrMaps) ;
 
+
 // création et ajout du controle
 var searchCtrl = L.geoportalControl.SearchEngine({
 });
 map.addControl(searchCtrl);
+}
 
 // Gérer le clic sur le bouton "Mettre à jour"
 const updateButton = document.getElementById('updateButton');

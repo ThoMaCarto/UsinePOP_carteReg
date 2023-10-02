@@ -17,7 +17,7 @@ const config = {
     Musée: 'red',
     Manufacture: 'blue',
     EPV: 'brown',
-    FTT: 'pink'
+    FTT: 'green'
   },
   searchIGN:true,
 };

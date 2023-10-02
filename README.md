@@ -25,19 +25,23 @@ La configuration de la carte se fait via le fichier `config.js`. Vous pouvez aju
 - `showScaleBar`: Afficher la barre d'échelle (`true` ou `false`).
 - `tileURL`: URL des tuiles de la carte.
 - `tileAttribution`: Attribution pour les tuiles de la carte.
-- 'tileOpacity' : l'opacité des tuiles de la carte.
+- `tileOpacity` : l'opacité des tuiles de la carte.
 - `geoJSONFile`: Fichier GeoJSON contenant les marqueurs.
 - `circleMarkerSize`: Taille des CircleMarkers.
 - `markerColors`: Couleurs des marqueurs en fonction des catégories.
+- `searchIGN`: Afficher la barre de recherche par adresse.
 
 ## Utilisation
-
-1. Clonez ce dépôt.
-2. Ouvrez `index.html` dans un navigateur web.
-3. La carte interactive sera affichée avec les marqueurs et la légende.
+1. vous pouvez l'intégrer directement sur votre page web en iframe : 
+`<iframe  width="1500"  height="400"  src="https://thomacarto.github.io/UsinePOP_carteReg/index.html"></iframe>`
+2. Vous pouvez cloner ce dépot
+3. Vous pouvez la visualiser sur une page github : [https://thomacarto.github.io/UsinePOP_carteReg/index.html](https://thomacarto.github.io/UsinePOP_carteReg/index.html)
 
 ## Auteur
-[Thomas Maillard](https://github.com/ThoMaCarto)
+[Thomas Maillard](https://github.com/ThoMaCarto) 
+cartographe/chef de projet chez [ArpentageS](https://www.arpentages.fr)
+
+
 à partir des données compilé et sélectionné par l'équipe du projet USINE POP
 
 ## Licence

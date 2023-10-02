@@ -11,7 +11,6 @@ const config = {
   tileAttribution: '© OpenTopoMap Contributors',  // Attribution pour les tuiles
   tileOpacity: 0.6, //opacité des tuiles de la carte
   AuthorAttribution : 'projet UsinePOP, Cartographie Thomas Maillard : <a href=www.arpentages.fr> ARPENTAGES </a>',
-  
   geoJSONFile: 'points_cartoRegion_UsinePOP.geojson',  // Fichier GeoJSON pour afficher les marqueurs
   circleMarkerSize: 4,  // Taille des CircleMarkers (en pixels)
   markerColors: {  // Couleurs pour chaque catégorie
@@ -147,6 +146,11 @@ function getSelectedCategories() {
   });
   return selectedCategories;
 }
+
+
+//////////////////////////////////////////////
+//// recherche par adresses du géoportail ////
+//////////////////////////////////////////////
 
 // ajout d'une couche
 var lyrMaps = L.geoportalLayer.WMTS({

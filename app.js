@@ -11,6 +11,10 @@ const config = {
   AuthorAttribution : 'projet UsinePOP, Cartographie Thomas Maillard : <a href=www.arpentages.fr> ARPENTAGES </a>',
   geoJSONFile: 'points_cartoRegion_UsinePOP.geojson',  // Fichier GeoJSON pour afficher les marqueurs
   circleMarkerSize: 4,  // Taille des CircleMarkers (en pixels)
+   // Catégories de marqueurs disponibles
+  markerCategories: ['Musée', 'Manufacture', 'EPV', 'FTT'],
+  // Ajout d'une variable pour stocker les filtres sélectionnés
+  selectedFilters: ['Musée', 'Manufacture', 'EPV', 'FTT']
   markerColors: {  // Couleurs pour chaque catégorie
     Musée: 'red',
     Manufacture: 'blue',
@@ -77,7 +81,65 @@ fetch(config.geoJSONFile)
   })
   .catch(error => console.error('Erreur lors du chargement du GeoJSON :', error));
 
+//// filtrage et mise à jour de la carte ////
+/////////////////////////////////////////////
+// Écouteur d'événement pour les changements de filtres
+legendContent.addEventListener('change', (event) => {
+  const filterValue = event.target.value;
 
+  if (event.target.checked) {
+    config.selectedFilters.push(filterValue);
+  } else {
+    config.selectedFilters = config.selectedFilters.filter(filter => filter !== filterValue);
+  }
+});
+
+// Écouteur d'événement pour le bouton de mise à jour
+const updateButton = document.getElementById('update-button');
+updateButton.addEventListener('click', () => {
+  updateMarkers();
+});
+
+// Fonction pour mettre à jour les marqueurs en fonction des filtres sélectionnés
+function updateMarkers() {
+  // Supprimer les anciens marqueurs de la carte
+  map.removeLayer(markers);
+
+  // Créer un nouveau groupe de marqueurs
+  markers = L.layerGroup();
+
+  // Filtrer les marqueurs en fonction des catégories sélectionnées
+  data.features.forEach(feature => {
+    const coordinates = feature.geometry.coordinates;
+    const properties = feature.properties;
+
+    if (coordinates && coordinates.length === 2) {
+      const categoryColor = config.markerColors[properties.Catégories] || 'gray';
+
+      if (config.selectedFilters.includes(properties.Catégories)) {
+        const marker = L.circleMarker([coordinates[1], coordinates[0]], {
+          radius: config.circleMarkerSize,
+          color: categoryColor,
+          fillColor: categoryColor,
+          fillOpacity: 0.9,
+        });
+
+        let popupContent = '<strong>Informations</strong><br>';
+        for (const [key, value] of Object.entries(properties)) {
+          popupContent += `<strong>${key}:</strong> ${value}<br>`;
+        }
+        marker.bindPopup(popupContent);
+
+        marker.addTo(markers);
+      }
+    } else {
+      console.error('Invalid coordinates for feature:', feature);
+    }
+  });
+
+  // Ajouter les nouveaux marqueurs à la carte
+  markers.addTo(map);
+}
 
 ///// Légende de la carte /////
 ///////////////////////////////

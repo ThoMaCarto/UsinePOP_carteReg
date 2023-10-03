@@ -20,8 +20,10 @@ const config = {
     FTT: 'green'
   },
   searchIGN:true,
-  useMarkerCluster: false,  // Activation ou désactivation du clustering
+  useMarkerCluster : true, // Activation ou désactivation du clustering
 };
+
+
 
 ////////////////////////////////
 ////Affichagege de la carte ////
@@ -116,6 +118,11 @@ fetch(config.geoJSONFile)
 
 // Fonction pour mettre à jour la carte en fonction des catégories sélectionnées
 function updateMap() {
+	
+ // Mettre à jour useMarkerCluster en fonction de la case à cocher
+  config.useMarkerCluster = document.getElementById('clusterCheckbox').checked;
+ 
+
   const selectedCategories = getSelectedCategories();
 
   // Effacer les marqueurs actuels
@@ -173,10 +180,16 @@ function getSelectedCategories() {
 }
 
 
-
 /////////////////////////////////////////////////////
 //// Gérer le clic sur le bouton "Mettre à jour" ////
 /////////////////////////////////////////////////////
 
 const updateButton = document.getElementById('updateButton');
 updateButton.addEventListener('click', updateMap);
+
+
+/// Ajout d'un événement d'écoute sur la case à cocher pour mettre à jour useMarkerCluster
+const clusterCheckbox = document.getElementById('clusterCheckbox');
+clusterCheckbox.addEventListener('change', function() {
+  updateMap(); // Mettre à jour la carte à chaque changement
+});
